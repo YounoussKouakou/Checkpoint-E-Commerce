@@ -4,7 +4,7 @@ import Image from "next/image"; // pour Image
 
 export default function Hero() {
   return (
-    <div className="min-h-[60vh] lg:min-h-[90vh] flex flex-col md:flex-row justify-center bg-white px-4 md:px-12 text-black">
+    <div className="min-h-auto lg:min-h-auto flex flex-col md:flex-row justify-center bg-white px-4 md:px-12 text-black">
       {/* Titre + texte + bouton */}
       <div className="max-w-2xl">
         <h1 className="text-5xl pt-6 md:text-7xl leading-tight font-semibold">

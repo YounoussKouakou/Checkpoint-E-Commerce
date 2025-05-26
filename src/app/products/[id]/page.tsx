@@ -13,7 +13,14 @@ type Product = {
 };
 
 const ProductDetails = () => {
-  const { id } = useParams();
+  const params = useParams();
+
+  const id = params && "id" in params
+    ? Array.isArray(params.id)
+      ? params.id[0]
+      : params.id
+    : null;
+
   const [product, setProduct] = useState<Product | null>(null);
 
   useEffect(() => {
@@ -24,7 +31,7 @@ const ProductDetails = () => {
         const res = await axios.get(`/api/fetch-products/${id}`);
         console.log("✅ API Response:", res.data);
 
-        setProduct(res.data.product); // <- doit correspondre à ta réponse backend
+        setProduct(res.data.product);
       } catch (error: any) {
         console.error("❌ Error fetching product:", error.response?.data || error.message);
         setProduct(null);

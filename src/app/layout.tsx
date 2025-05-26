@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ToastProvider from "../providers/ToastProvider";
+// import { CartProvider } from "../components/contexts/CartContext";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -23,7 +24,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={lato.className}>
         <ToastProvider />
         <Navbar />
+       {/* <CartProvider>  */}
         {children}
+        {/* </CartProvider> */}
         <Footer />
       </body>
     </html>

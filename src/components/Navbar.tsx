@@ -1,5 +1,6 @@
 import { Search } from "lucide-react";
 import Link from "next/link";
+import { TiShoppingCart } from "react-icons/ti";
 
 const Navbar = () => {
 return(
@@ -11,9 +12,10 @@ return(
                 <input type="text" className="h-[36px] relative pl-10 border-[1px] border-black/[0.7] text-sm rounded-[8px] w-full py-2 px-3 focus:outline-none bg-transparent" placeholder="Search" />
 
             </div>
-            <Link href={"/add-product"}>
+            {/* <Link href={"/add-product"}>
             <button className="bg-[#212529] text-white px-3 py-2 rounded-md cursor-pointer"> Add Product</button>
-            </Link>
+            </Link> */}
+            <TiShoppingCart />
         </div>
     </nav>
 )
