@@ -9,7 +9,7 @@ export default function Home() {
    <div className="bg-[#F8F9FA]">4
   
     <Hero/>
-    <h2 className="w-full text-center text-2xl md:text-4xl font-semibold py-6 ">All products</h2>
+    <h2 className="w-full text-center text-2xl md:text-4xl font-semibold py-6 ">Tous les produits</h2>
     <ProductList/>
     
    </div>

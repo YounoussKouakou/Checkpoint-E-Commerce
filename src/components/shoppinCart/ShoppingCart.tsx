@@ -153,7 +153,7 @@ const ShoppingCart: React.FC<ShoppingCartProps> = ({ cart }) => {
               />
               <div>
                 <h2 className="font-bold">{item.name}</h2>
-                <p className="text-gray-700">{item.price} $</p>
+                <p className="text-gray-700">{item.price} FCFA</p>
               </div>
             </div>
             <div className="flex items-center">
@@ -167,7 +167,7 @@ const ShoppingCart: React.FC<ShoppingCartProps> = ({ cart }) => {
                 />
               </div>
               <span className="font-bold">
-                ${(item.price * quantities[index]).toFixed(2)}
+                FCFA{(item.price * quantities[index]).toFixed(2)}
               </span>
             </div>
           </div>
@@ -176,15 +176,15 @@ const ShoppingCart: React.FC<ShoppingCartProps> = ({ cart }) => {
         <hr className="my-4" />
         <div className="flex justify-between items-center">
           <span className="font-bold">Sous-total :</span>
-          <span className="font-bold">${subtotal.toFixed(2)}</span>
+          <span className="font-bold">FCFA{subtotal.toFixed(2)}</span>
         </div>
         <div className="flex justify-between items-center mt-2">
           <span>Taxes :</span>
-          <span>${taxes.toFixed(2)}</span>
+          <span>FCFA{taxes.toFixed(2)}</span>
         </div>
         <div className="flex justify-between items-center mt-2">
           <span className="font-bold">Total :</span>
-          <span className="font-bold">${total.toFixed(2)}</span>
+          <span className="font-bold">FCFA{total.toFixed(2)}</span>
         </div>
 
         <div className="flex justify-center mt-6">

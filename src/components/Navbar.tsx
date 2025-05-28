@@ -2,6 +2,12 @@ import { Search } from "lucide-react";
 import Link from "next/link";
 import { TiShoppingCart } from "react-icons/ti";
 
+
+const cartItems = [
+  { id: 1, name: 'Produit A' },
+  { id: 2, name: 'Produit B' },
+];
+
 const Navbar = () => {
 return(
     <nav className="px-4 md:px-12 md:py-6 bg-white text-black">
@@ -16,6 +22,8 @@ return(
             <button className="bg-[#212529] text-white px-3 py-2 rounded-md cursor-pointer"> Add Product</button>
             </Link> */}
             <TiShoppingCart />
+                  
+
         </div>
     </nav>
 )

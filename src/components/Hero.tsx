@@ -8,15 +8,17 @@ export default function Hero() {
       {/* Titre + texte + bouton */}
       <div className="max-w-2xl">
         <h1 className="text-5xl pt-6 md:text-7xl leading-tight font-semibold">
-          Timeless elegance on your wrist
+          Bienvenue chez YOUNOUSS
         </h1>
         <p className="text-[#495057] mt-4">
-          Discover our curated collection of premium watches, crafted for those
-          who appreciate sophistication and precision.
+          Découvrez une expérience shopping unique.
+     Des produits soigneusement sélectionnés, des offres exclusives et une qualité qui dépasse vos attentes.
+    Livraison rapide, retours faciles, satisfaction garantie.
+    Faites-vous plaisir dès aujourd’hui et profitez de nos nouveautés !
         </p>
         <Link href="#product">
           <button className="mt-8 bg-[#212529] text-white px-3 py-2 rounded-md cursor-pointer">
-            Shop the collection
+            Voir tous les articles
           </button>
         </Link>
       </div>
