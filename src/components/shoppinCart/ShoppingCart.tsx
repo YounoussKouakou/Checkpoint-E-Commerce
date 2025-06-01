@@ -1,6 +1,7 @@
 
-import { Checkout } from "@/src/app/checkout/page";
+// import { Checkout } from "@/src/app/checkout/page";
 import React, { useState } from "react";
+import { CheckoutComponent } from "../checkout/CheckoutComponent";
 
 interface Product {
   name: string;
@@ -32,7 +33,7 @@ const ShoppingCart: React.FC<ShoppingCartProps> = ({ cart }) => {
 
   if (checkoutMode) {
     // 🔥 Si on est en mode checkout, on rend Checkout
-    return <Checkout cart={cart} total={total} />;
+    return <CheckoutComponent cart={cart} total={total} />;
   }
 
   return (
